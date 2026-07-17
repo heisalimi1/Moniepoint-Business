@@ -541,7 +541,7 @@ body{
 .all-the-tools {
     min-height: 100dvh;
     background-color: #F3F6FB;
-    border: 1px solid;
+    /* border: 1px solid; */
 }
 
 .all-the-tools >h1 {

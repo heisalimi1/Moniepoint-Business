@@ -1,3 +1,168 @@
+@import url('https://fonts.cdnfonts.com/css/aventa-personal-use-only');
+:root{
+    --smurf:#030B1D;
+    --smurf1: #D8E0E4;
+    --smurf2: #031335;
+    --smurf3: #C4E9FD;
+    --smurf4: #3E588E;
+}
+body::-webkit-scrollbar{
+    scrollbar-color: grey;
+
+}
+body::-webkit-scrollbar-thumb{
+    background: #0357EE;
+}
+section{
+    padding: 60px 0;
+}
+.footer{
+    padding: 60px 0;
+}
+.btn2{
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    color: #ffffff;
+    background-color: #031335;
+    cursor: pointer;
+}
+.btn2:hover{
+    background-color:  #35425D;
+    transform: scale(0.95);
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.big-nat li a {
+    position: relative;
+    padding-bottom: 4px;
+}
+.big-nat li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.big-nat li a:hover::after {
+    transform: scaleX(1);
+}
+
+.modal-body .img-fluid:hover{
+    background-color:  #E6F6FE;
+}
+@media (max-width: 768px){
+    .navbar-toggler{
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+.dropdown-menu li:hover {
+    color: #0357EE;
+}
+.zoom{
+    margin-top: 50px;
+}
+.modal-body button:hover{
+    background-color: #E6F6FE;
+    color: #5691F4;
+}
+.incognito .zeddy{
+    /* border: 1px solid red; */
+    background-color: white;
+    color: #6096F4;
+    cursor: pointer;
+}
+.biz{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.biz img{
+    height: 200px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 20px;
+    border: 1px solid gray;
+}
+@keyframes slidelogos{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+.animation-container{
+    display: flex;
+    align-items: center;
+}
+.anime-business{
+    display: flex;
+    width: max-content;
+}
+.logo-group{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding-right: 4rem;
+    animation: slidelogos 60s linear infinite;
+}
+.enjoy-biz{
+    background-image: url("./media/ctaL\ \(1\).svg");
+    background-color: #0349C7;
+    background-position: center;
+}
+.mega-menu{
+    width: 860px;
+    max-width: 95vw;
+    border-radius: 16px;
+    position: absolute !important;
+    top: 100% !important;
+}
+.dropdown-toggle::after{
+    display: none !important;
+}
+.icon-box{
+    width: 44px;
+    flex-shrink: 0;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-button{
+    display: none !important;
+}
+.flex-img1{
+    display: none !important;
+}
+.zeddy:hover{
+    background-color: #f2f2f2;
+    transform: scale(0.95);
+}
+.zummy:hover{
+    transform: scale(0.95);
+}
+.sticky{
+    position: sticky;
+    top: 120px;
+    z-index: 100;
+    /* opacity: 1; */
+}
+
+
+
+
+
+
+
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -1322,5 +1487,7 @@ body{
             font-size: 5px;
         }
     }
+
+    
 
     
